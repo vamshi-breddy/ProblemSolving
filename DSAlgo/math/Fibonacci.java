@@ -1,4 +1,4 @@
-package com.DSAlgo.recursion.fibonacci;
+package com.DSAlgo.math;
 
 import java.util.Scanner;
 
