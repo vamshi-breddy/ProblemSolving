@@ -4,17 +4,16 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-       int largest=0,secondLargest=0;
-       int [] array=new int[] {10,9,8,7,6,9,9};
+       int largest=Integer.MIN_VALUE,secondLargest=Integer.MIN_VALUE;
+       int [] array=new int[] {10,32,55,69,69,78,78,67};
        for(int i=0;i<array.length;i++) {
     	   if(array[i]>largest) {
-    		   largest=array[i];
-    		   secondLargest=largest;
-    	   }
-    	   else {
-    		   secondLargest=array[i];
-    	   }
-       }
+			   secondLargest=largest;
+			   largest=array[i];
+    	   } else if (array[i]> secondLargest && array[i] < largest) {
+			   secondLargest = array[i];
+		   }
+	   }
        System.out.println(secondLargest);
 	}
 
