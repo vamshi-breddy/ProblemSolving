@@ -20,7 +20,7 @@ public class TwoSumProblem {
      }
 
     private static int[] twoSum(int target, int[] a) {
-         HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+         HashMap<Integer, Integer> map = new HashMap<>();
          int []result = new int[2];
          for (int i = 0; i < a.length; i++) {
              if(map.containsKey(target-a[i])){  // value contains actual index, key has the number
