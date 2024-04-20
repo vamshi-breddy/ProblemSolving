@@ -1,4 +1,4 @@
-package com.DSAlgo.math;
+package com.DSAlgo.math.fibonacci;
 
 import java.util.Scanner;
 
