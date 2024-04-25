@@ -3,10 +3,10 @@ package com.carFleet;
 class Car {
 
     int position;
-    int speed;
+    int time;
 
-    public Car(int position, int speed) {
+    public Car(int position, int time) {
         this.position = position;
-        this.speed = speed;
+        this.time = time;
     }
 }
