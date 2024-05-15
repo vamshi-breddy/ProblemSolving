@@ -1,4 +1,4 @@
-package com.DSAlgo.GreedyAlgorithms;
+package com.DSAlgo.GreedyAlgorithms.FractionalKnapSack;
 
 public class Item {
 

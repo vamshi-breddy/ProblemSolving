@@ -1,4 +1,4 @@
-package com.DSAlgo.GreedyAlgorithms;
+package com.DSAlgo.GreedyAlgorithms.FractionalKnapSack;
 
 import java.util.Comparator;
 
