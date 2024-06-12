@@ -1,7 +1,7 @@
 package com.DSAlgo.Arrays.MergeTwoSortedArrays;
 
 import java.util.Arrays;
-
+//https://www.youtube.com/watch?v=C4oBXLr3zos
 public class MergeTwoSortedArrays {
     public static void main(String[] args) {
         int[] nums1 = new int[] {1,2,3,0,0,0};

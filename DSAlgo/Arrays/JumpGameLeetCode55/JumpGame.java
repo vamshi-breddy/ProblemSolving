@@ -4,6 +4,7 @@ public class JumpGame {
 
     public static void main(String[] args) {
 //        int []a = new int[]{2,3,1,1,4};
+        //                    0,1,2,3,4
 //        int []a = new int[]{1,1,2,5,2,1,0,0,1,3};
         int []a = new int[]{3,2,1,0,4};
         int goal = a.length-1;
