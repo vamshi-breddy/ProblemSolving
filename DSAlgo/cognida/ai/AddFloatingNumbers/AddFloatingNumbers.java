@@ -17,8 +17,6 @@ public class AddFloatingNumbers {
                 secondDigit = (sum/10)%10;
 
                 c=c+firstDigit;
-
-
             }
             else {
                 c=c+a.charAt(i);
