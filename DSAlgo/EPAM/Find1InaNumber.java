@@ -7,7 +7,7 @@ import java.util.List;
 public class Find1InaNumber {
     public static void main(String[] args) {
 
-        List<Integer> numberList = Arrays.asList(1,51,2124,614,2213456);
+        List<Integer> numberList = Arrays.asList(1,51,2124,614,2213456,2122213);
         List<Integer> resultList = new ArrayList<>();
 
         for(int i =0;i<numberList.size();i++){
@@ -24,7 +24,7 @@ public class Find1InaNumber {
                 int result = secondDigit%10;
 
                 if(result==1){
-                    resultList.add(i);
+                    resultList.add(numberList.get(i));
                 }
             }
         }
