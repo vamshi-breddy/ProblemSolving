@@ -1,6 +1,7 @@
 package com.DSAlgo.Arrays.TrappingRainWaterProblem;
 
 public class TrappingRWTwoPointerApproach {
+    //https://www.youtube.com/watch?v=EdR3V5DBgy
     public static void main(String[] args) {
         int[] height = new int[] {0,1,0,2,1,0,1,3,2,1,2,1};
         int maxleft=0,maxRight=0,water=0;
