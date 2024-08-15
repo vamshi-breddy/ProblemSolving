@@ -4,11 +4,12 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
+//https://www.youtube.com/watch?v=l_CFMVPKv2Q
 
 public class SlidingWindowDeque {
     public static void main(String[] args) {
         int K = 3;
-        int nums[] = new int[]{12, 1, 78, 90, 57, 89, 56};
+        int nums[] = new int[]{12, 1, 78, 90, 57, 89, 56 };
         Deque<Integer> dq = new LinkedList<Integer>();
         List<Integer> ans = new ArrayList<>();
 
