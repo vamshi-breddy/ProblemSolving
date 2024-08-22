@@ -1,13 +1,7 @@
 package com.EmployeeStreamDemo;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.DoubleSummaryStatistics;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class EmployeeStreamDemo {
     static List<Employee> employeeList = new ArrayList<Employee>();
@@ -96,6 +90,17 @@ public class EmployeeStreamDemo {
 	   method16();
 	   System.out.println();
 
+	   //17. sort the employees based on age, gender, salary
+		method17();
+		System.out.println();
+
+	}
+
+	private static void method17() {
+		List<Employee> collect = employeeList.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
+				.thenComparing(Employee::getGender)).collect(Collectors.toList());
+
+		System.out.println(collect);
 	}
 
 	private static void method16() {
