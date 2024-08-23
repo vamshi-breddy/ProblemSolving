@@ -94,13 +94,22 @@ public class EmployeeStreamDemo {
 		method17();
 		System.out.println();
 
+		method18();
+		System.out.println();
+
+	}
+
+	private static void method18() {
+		System.out.println("Method18 **********************");
+		System.out.println(employeeList.stream().collect(Collectors.groupingBy(Employee::getSalary, Collectors.mapping(Employee::getName,
+				Collectors.toList()))).entrySet().stream().sorted(Collections.reverseOrder(Map.Entry.comparingByKey())).collect(Collectors.toList()).get(2).getKey());
 	}
 
 	private static void method17() {
-		List<Employee> collect = employeeList.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
-				.thenComparing(Employee::getGender)).collect(Collectors.toList());
+//		List<Employee> collect = employeeList.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
+//				.thenComparing(Employee::getGender)).collect(Collectors.toList());
 
-		System.out.println(collect);
+//		System.out.println(collect);
 	}
 
 	private static void method16() {
