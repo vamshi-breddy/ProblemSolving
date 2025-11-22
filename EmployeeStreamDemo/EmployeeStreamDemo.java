@@ -97,6 +97,15 @@ public class EmployeeStreamDemo {
 		method18();
 		System.out.println();
 
+		method19();
+		System.out.println();
+
+	}
+
+	private static void method19(){
+		System.out.println("Group by employee Department and sort based on their salaries");
+		System.out.println(employeeList.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.collectingAndThen(Collectors.toList(),
+				list -> list.stream().sorted(Comparator.comparing(Employee::getSalary).reversed()).collect(Collectors.toList())))));
 	}
 
 	private static void method18() {
@@ -106,10 +115,10 @@ public class EmployeeStreamDemo {
 	}
 
 	private static void method17() {
-//		List<Employee> collect = employeeList.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
-//				.thenComparing(Employee::getGender)).collect(Collectors.toList());
+		List<Employee> collect = employeeList.stream().sorted(Comparator.comparing(Employee::getAge).thenComparing(Employee::getName)
+				.thenComparing(Employee::getGender)).collect(Collectors.toList());
 
-//		System.out.println(collect);
+		System.out.println(collect);
 	}
 
 	private static void method16() {
@@ -175,7 +184,8 @@ public class EmployeeStreamDemo {
 
 	private static void method8() {
 		// TODO Auto-generated method stub
-		Optional<Employee> youngest = employeeList.stream().filter(e->e.getGender()=="male" && e.getDepartment()=="Product Development").min(Comparator.comparingInt(Employee::getAge));
+		Optional<Employee> youngest = employeeList.stream()
+				.filter(a->a.getGender()=="male" && a.getDepartment()=="Product Development").min(Comparator.comparingInt(Employee::getAge));
 	    System.out.println("ID"+youngest.get().id+"-------"+"name"+youngest.get().name);
 	}
 	private static void method7() {
